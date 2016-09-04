@@ -7,7 +7,7 @@
  *  
 */  
   
-package com.fly.daoimpl;
+package com.fly.dao.impl;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
