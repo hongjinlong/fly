@@ -20,6 +20,13 @@ git项目关联		git remote add origin github.com/hongjinlong/fly.git
 查看关联是否成功		git remote -v		
 查看当前项目的状态	git status		
 
+
+在本地新建一个分支： git branch Branch1
+切换到你的新分支: git checkout Branch1
+将新分支发布在github上： git push origin Branch1
+在本地删除一个分支： git branch -d Branch1
+在github远程端删除一个分支： git push origin :Branch1   (分支名前的冒号代表删除)
+
 问题：
 1.提交问题：本地代码改变后无法 git pull	
 	解决： 用 git stash 命令隐藏当前本地改变	再 git pull 在此基础上更改 
