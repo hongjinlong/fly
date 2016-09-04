@@ -19,3 +19,9 @@ git操作参考：
 git项目关联		git remote add origin github.com/hongjinlong/fly.git
 查看关联是否成功		git remote -v		
 查看当前项目的状态	git status		
+
+问题：
+1.提交问题：本地代码改变后无法 git pull	
+	解决： 用 git stash 命令隐藏当前本地改变	再 git pull 最够 git unstash恢复本地隐藏
+	
+	
