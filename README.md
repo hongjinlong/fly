@@ -54,7 +54,7 @@ git项目关联		git remote add origin github.com/hongjinlong/fly.git
 6.
 	在右键项目打开此窗口.在左侧列表中会出现一个Deployment Assembly,点击进去后 
 7.
-	删除test的两项,因为test是测试使用,并不需要部署. 
+	删除test的两项,因为test是测试使用,并不需要部署.   a
 8.
 	设置将Maven的jar包发布到lib下. 
 	Add -> Java Build Path Entries -> Maven Dependencies -> Finish 
