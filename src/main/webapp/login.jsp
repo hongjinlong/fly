@@ -1,10 +1,10 @@
-﻿<!DOCTYpE HTML pUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 	<head>
-		<meta content="IE=11.0000" http-equiv="X-Ua-Compatible">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
-		<meta name="GENERaTOR" content="MSHTML 11.00.9600.17496">
+		<meta charset="UTF-8">
 		<title>登录</title> 
 	
 		<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
@@ -144,7 +144,15 @@
 				$("#right_hand").attr("class","initial_right_hand");
 				$("#right_hand").attr("style","right:-112px;top:-12px");
 			});
+			
+			$("#login").click(function(){
+				alert("1");
+				alert($("#username").val());
+				alert($("#password").val());
+			})
 		});
+		
+		
 		</script>
 	</head> 
 
@@ -158,7 +166,7 @@
 			</div>
 			<p style="padding: 30px 0px 10px; position: relative;">
 				<span class="u_logo"></span>         
-				<input class="ipt" type="text" placeholder="请输入用户名或邮箱" value="" /> 
+				<input class="ipt" type="text" placeholder="请输入用户名或邮箱" value="" id="username"/> 
 		    </p>
 			<p style="position: relative;">
 				<span class="p_logo"></span>         
@@ -171,7 +179,7 @@
 					</span> 
 			        <span style="float: right;">
 			        	<a style="color: rgb(204, 204, 204); margin-right: 10px;" href="#">注册</a>  
-			            <a style="background: rgb(0, 142, 173); padding: 7px 10px; border-radius: 4px; border: 1px solid rgb(26, 117, 152); border-image: none; color: rgb(255, 255, 255); font-weight: bold;" href="login.jsp">登录</a> 
+			            <a id="login" style="background: rgb(0, 142, 173); padding: 7px 10px; border-radius: 4px; border: 1px solid rgb(26, 117, 152); border-image: none; color: rgb(255, 255, 255); font-weight: bold;" >登录</a> 
 			        </span>         
 			    </p>
 			</div>
