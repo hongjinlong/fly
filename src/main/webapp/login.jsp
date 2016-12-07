@@ -147,8 +147,10 @@
 			
 			$("#login").click(function(){
 				alert("1");
-				alert($("#username").val());
-				alert($("#password").val());
+				let username = $("#username").val();
+				let password = $("#password").val();
+				$("#login").disabled = "disabled";
+				window.location.href = "login.act?username="+username+"&password="+password;
 			})
 		});
 		
