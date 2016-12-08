@@ -10,7 +10,7 @@
 		
 		<error-page>
 			<error-code>404</error-code>
-			<location>/404_01.html</location>
+			<location>/error_page.act?code=404</location>
 		</error-page>
 		
 		<servlet>
@@ -23,5 +23,14 @@
 			<url-pattern>/login.act</url-pattern>
 		</servlet-mapping>
 		
+		<servlet>
+			<servlet-name>ErrorPageServlet</servlet-name>
+			<servlet-class>com.fly.servlet.ErrorPageServlet</servlet-class>
+		</servlet>		
+		
+		<servlet-mapping>
+			<servlet-name>ErrorPageServlet</servlet-name>
+			<url-pattern>/error_page.act</url-pattern>
+		</servlet-mapping>
 		
 </web-app>

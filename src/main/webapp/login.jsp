@@ -40,11 +40,22 @@
 				$("#right_hand").attr("style","right:-112px;top:-12px");
 			});
 			
-			$("#login").click(function(){
+			/* $("#login").click(function(){
 				let username = $("#username").val();
 				let password = $("#password").val();
 				window.location.href = "login.act?username="+username+"&password="+password;
-			})
+			}) */
+			
+			$("#login").click(function(){
+				$("form").submit();
+			});
+			
+			$(window).keydown(function(event){
+				switch(event.keyCode){
+					case 13:
+						$("form").submit();
+				}
+			});
 		});
 		
 		</script>
@@ -58,14 +69,16 @@
 				<div class="initial_left_hand" id="left_hand"></div>
 				<div class="initial_right_hand" id="right_hand"></div>
 			</div>
-			<p style="padding: 30px 0px 10px; position: relative;">
-				<span class="u_logo"></span>         
-				<input class="ipt" type="text" placeholder="请输入用户名或邮箱" value="" id="username"/> 
-		    </p>
-			<p style="position: relative;">
-				<span class="p_logo"></span>         
-				<input class="ipt" id="password" type="password" placeholder="请输入密码" value="">   
-		  	</p>
+			<form action="login.act" method="post">
+				<p style="padding: 30px 0px 10px; position: relative;">
+					<span class="u_logo"></span>         
+					<input class="ipt" type="text" placeholder="请输入用户名或邮箱" value="" name="username"/> 
+			    </p>
+				<p style="position: relative;">
+					<span class="p_logo"></span>         
+					<input class="ipt" name="password" type="password" placeholder="请输入密码" value="">   
+			  	</p>
+		  	</form>
 			<div style="height: 50px; line-height: 50px; margin-top: 30px; border-top-color: rgb(231, 231, 231); border-top-width: 1px; border-top-style: solid;">
 				<p style="margin: 0px 35px 20px 45px;">
 					<span style="float: left;">
