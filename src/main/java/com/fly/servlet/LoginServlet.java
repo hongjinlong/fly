@@ -32,7 +32,7 @@ public class LoginServlet extends HttpServlet {
 		try {
 			boolean isLogin = service.isLogin(user);
 			if(true == isLogin){
-				resp.sendRedirect("WEB-INF/index.jsp");
+				req.getRequestDispatcher("WEB-INF/pages/index.jsp").forward(req, resp);
 			}else{
 				resp.sendRedirect("login.jsp");
 			}
